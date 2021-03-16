@@ -1,0 +1,53 @@
+\documentclass[12pt,a4paper,oneside]{book}
+% Scheletro di sorgente LaTeX per la scrittura 
+% di una tesi di laurea.
+% Per la grafica 
+\usepackage{graphicx}
+\usepackage{forest}
+\usepackage{subcaption}
+%\usepackage[]{mcode}
+\usepackage{tikz}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{shapes,snakes}
+\usetikzlibrary{calc,arrows}
+\usetikzlibrary{scopes,matrix,positioning}
+\tikzset{%	
+  every neuron/.style={
+    circle,
+    draw,
+    minimum size=0.5cm
+  },
+  neuron missing/.style={
+    draw=none, 
+    scale=3,
+    text height=0.333cm,
+    execute at begin node=\color{black}$\vdots$
+  },
+  neuron missingl/.style={
+    draw=none, 
+    scale=2,
+    text height=0.333cm,
+    execute at begin node=\color{black}$\vdots$
+  },
+}
+\usepackage[a4paper,top=3.5cm,bottom=3cm,left=3cm,right=3cm,bindingoffset=5mm]{geometry}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage[pdfpagemode={UseOutlines},colorlinks=true,linktocpage=true,citecolor=blue,bookmarksnumbered=true,bookmarksopenlevel={3},pdfstartview={Fit},pdfpagelayout={SinglePage}]{hyperref}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{eurosym}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage{fancyhdr}
+
+
+\begin{document}
+
+\include{chap1}
+
+\end{document}
